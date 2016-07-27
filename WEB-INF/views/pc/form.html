@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"  content="width=device-width, initial-scale=1">
+    <title>表单</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="../../../assets/images/logo/favicon.png">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../../../assets/images/logo/app-icon72x72@2x.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="../../../assets/images/logo/app-icon72x72@2x.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../../../assets/images/logo/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="stylesheet" href="../../../assets/stylesheets/amaze/amazeui.css">
+    <link rel="stylesheet" href="../../../assets/stylesheets/amaze/app.css">
+</head>
+<body>
+
+<div class="am-container" style="margin-top: 10%;">
+    <div class="am-g">
+        <div class="am-u-sm-12">
+            <div class="am-tabs" data-am-tabs="{noSwipe: 1}">
+                <ul class="am-tabs-nav am-nav am-nav-tabs">
+                    <li class="am-active"><a href="#tab1">后台表单</a></li>
+                    <li><a href="#tab2">前台注册</a></li>
+                </ul>
+
+                <div class="am-tabs-bd">
+                    <div class="am-tab-panel am-fade am-in am-active" id="tab1">
+                        <div class="am-u-sm-12">
+                            <form class="am-form am-form-horizontal">
+                                <div class="am-form-group">
+                                    <label for="username" class="am-u-sm-3 am-form-label">用户名</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" id="username" name="username" placeholder="输入你的用户名">
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <label for="realname" class="am-u-sm-3 am-form-label">姓名</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" id="realname" name="realname" placeholder="输入你的姓名">
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <label for="password" class="am-u-sm-3 am-form-label">登录密码</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="password" id="password" name="password" placeholder="登录密码">
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <label for="plainPassword" class="am-u-sm-3 am-form-label">确认密码</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="password" id="plainPassword" name="plainPassword" placeholder="确认密码">
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <label for="QQ" class="am-u-sm-3 am-form-label">QQ</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="number" pattern="[0-9]*" id="QQ" name="QQ" placeholder="输入你的QQ号码">
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <label for="weixin" class="am-u-sm-3 am-form-label">微信号</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" id="weixin" name="weixin" placeholder="输入你的微信号">
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <label for="phone" class="am-u-sm-3 am-form-label">电子邮件</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="email" id="email" name="email" placeholder="输入你的电子邮件">
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <label for="phone" class="am-u-sm-3 am-form-label">手机号码</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="number" pattern="[0-9]*" id="phone" name="phone"
+                                               placeholder="输入你的手机号码">
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <label for="introl" class="am-u-sm-3 am-form-label">简介</label>
+                                    <div class="am-u-sm-9">
+                                        <textarea class="" rows="5" id="introl" name="introl" placeholder="输入你的简介"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <div class="am-u-sm-9 am-u-sm-push-3">
+                                        <button type="button" class="am-btn am-btn-primary">保存修改</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="am-tab-panel am-fade am-in am-active" id="tab2">
+                         测试
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--在这里编写你的代码-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="../../../assets/javascripts/jquery/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="../../../assets/javascripts/amaze/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="../../../assets/javascripts/amaze/amazeui.min.js"></script>
+</body>
+</html>

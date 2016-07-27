@@ -1,0 +1,117 @@
+<!doctype html>
+<html class="no-js" lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"  content="width=device-width, initial-scale=1">
+    <title>微网首页</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="../../../assets/images/logo/favicon.png">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../../../assets/images/logo/app-icon72x72@2x.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="../../../assets/images/logo/app-icon72x72@2x.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../../../assets/images/logo/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="stylesheet" href="../../../assets/stylesheets/amaze/amazeui.css">
+    <link rel="stylesheet" href="../../../assets/stylesheets/plugins/swiper/amazeui.swiper.min.css"/>
+    <link rel="stylesheet" href="../../../assets/stylesheets/amaze/app.css">
+</head>
+<body>
+<!--在这里编写你的代码-->
+<!-- 顶部 -->
+<header data-am-widget="header"
+        class="am-header am-header-default">
+    <div class="am-header-left am-header-nav">
+        <a href="#left-link" class="am-btn">
+            <i class="am-header-icon am-icon-home"></i>
+        </a>
+    </div>
+
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            百乐购
+        </a>
+    </h1>
+
+    <div class="am-header-right am-header-nav">
+        <a href="#right-link" class="am-btn" data-am-offcanvas>
+            <i class="am-header-icon am-icon-bars"></i>
+        </a>
+    </div>
+</header>
+
+<!-- 滚动广告图片 -->
+<div>
+    <div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
+        <ul class="am-slides">
+            <li><img src="http://pic.58pic.com/58pic/14/36/28/16Q58PICnjx_1024.jpg" /></li>
+            <li><img src="http://pic.58pic.com/58pic/14/36/28/16Q58PICnjx_1024.jpg" /></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Slider main container -->
+<div class="am-g">
+    <div class="am-u-sm-12">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+</div>
+
+<!-- 侧边栏内容 -->
+<div id="right-link" class="am-offcanvas">
+    <div class="am-offcanvas-bar">
+        <div class="am-offcanvas-content">
+            <p>
+                我不愿让你一个人 <br/>
+                承受这世界的残忍 <br/>
+                我不愿眼泪陪你到 永恒
+            </p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="../../../assets/javascripts/jquery/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="../../../assets/javascripts/amaze/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="../../../assets/javascripts/amaze/amazeui.min.js"></script>
+<script src="../../../assets/javascripts/plugins/swiper/amazeui.swiper.min.js"></script>
+<script>
+    $(function() {
+        $('#mySwiper').swiper();
+    });
+</script>
